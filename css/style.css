@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  background-image: url("https://receitastanahora.com.br/wp-content/uploads/2016/11/chocolate-em-po-destac.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  margin-left: 131px;
+}
+.form_img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0425/2699/8690/articles/Gooey_Chocolate_Gifs_8.gif?v=1652815295");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1rem;
+}
+.form_img img {
+  width: 31rem;
+}
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f1e3d7;
+}
+.form_header h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #532d15;
+}
+.form > input {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 111px;
+  margin: 0.6rem 0;
+  border-radius: 11px;
+  box-shadow: 1px 1px 6px rgb(52, 48, 45);
+}
+
+.ip1 {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  width: 272px;
+  margin: 0.6rem 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgb(125, 124, 124);
+}
+.ip2 {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  width: 272px;
+  height: 122px;
+  margin: 0.6rem 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgb(113, 112, 112);
+}
+.bt {
+  background-color: #532d15;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 58px;
+  width: 271px;
+}
+.bt:hover {
+  background-color: rgba(124, 61, 27, 0.996);
+}
+
+@media screen and (max-width: 1330px) {
+  .form_img {
+    display: none;
+  }
+  .container {
+    width: 50%;
+  }
+  .form {
+    width: 100%;
+  }
+  .header {
+    width: 50%;
+  }
+  .menu {
+    width: 110%;
+  }
+  .about {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .menu {
+    width: 50%;
+  }
+  .about {
+    width: 50%;
+  }
+}
+
+header {
+  width: 100%;
+  height: 51px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(186, 127, 93);
+  border: #e6e1dec7;
+}
+
+.logo > img {
+  width: 111px;
+  height: 51px;
+  border-radius: 0%;
+  align-self: center;
+  margin-left: 131px;
+}
+.menui {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menui li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  display: block;
+  margin-left: 6px;
+  margin-right: 131px;
+}
+.menui li a:hover {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  background-color: #6d3b09;
+  margin-left: 10px;
+}
+.about {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  margin-left: 131px;
+  background-color: #f7f1e3d7;
+}
+.ig {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.ig img {
+  width: 31rem;
+}
+.text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #381c03;
+}
+.text > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.text > h2 {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# menu de pedido de ovo 
+--------------------------------------------------------------*/
+.menu #menu-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #f6e3b7d7;
+}
+
+.menu #menu-flters li:last-child {
+  margin-right: 0;
+}
+
+.menu .menu-item {
+  margin-top: 50px;
+}
+
+.menu .menu-img {
+  width: 73px;
+  border-radius: 50%;
+  float: left;
+  height: 71px;
+  align-items: justify;
+}
+
+.menu .menu-content {
+  margin-left: 85px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu .menu-content::after {
+  content: "......................................................................"
+    "...................................................................."
+    "....................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: #e6e0e0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menu .menu-content a {
+  padding-right: 10px;
+  background: #1a1814;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  color: white;
+  transition: 0.3s;
+}
+
+.menu .menu-content a:hover {
+  color: #ffffff;
+}
+
+.menu .menu-content span {
+  background: #1a1814;
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+  color: #cda45e;
+}
+
+.menu .menu-ingredients {
+  margin-left: 85px;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(254, 254, 254, 0.989);
+}
+.endc {
+  color: rgba(254, 254, 254, 0.989);
+}
